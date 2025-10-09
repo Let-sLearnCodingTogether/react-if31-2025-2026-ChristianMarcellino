@@ -21,8 +21,8 @@ export default function Login(){
     }
     const fetchSpots = async()=>{
         const response = await http.get("/spot")
-        console.log(response)
-        setSpots(response)
+        console.log(response.data.data.data)
+        setSpots(response.data.data.data)
     }
 
     const handleLogin = async (e) =>{
@@ -39,11 +39,7 @@ export default function Login(){
             sessionStorage.setItem("token", response.data.token)
             fetchSpots()
         }
-    }
-
-
-
-    
+    }    
 
     return <div className="grid min-h-screen grid-cols-1 md:grid-cols-2">
     <div className="hidden bg-image p-5 md:block">
