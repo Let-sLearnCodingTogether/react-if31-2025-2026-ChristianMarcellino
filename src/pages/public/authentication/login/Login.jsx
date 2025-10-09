@@ -10,13 +10,13 @@ export default function Login(){
                     Wawan Ohim
                 </div>
             </div>
-            <div className="top-0 font-semibold text-center text-white">
+            <div className="font-semibold text-center text-white">
                 &copy; 2025 Wawan Ohim : Class IF31 Project
             </div>
-         </div>
+        </div>
     </div>
     <div className="flex items-center justify-center">
-        Right
+        Login Form
     </div>
 </div>    
 
